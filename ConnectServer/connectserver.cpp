@@ -8,8 +8,6 @@ int main(int argc, char *argv[])
 
     MOSE::Configuration::loadGlobal("connectserver");
 
-    qDebug() << sizeof(short) << sizeof(unsigned short);
-
     MOSE::CONNECTSERVER::MainServer::main();
 
     return app.exec();

@@ -15,6 +15,7 @@ void onConnect(int index);
 void onDisconnect(int index);
 void onReceive(int index, char* buffer, int size);
 void send(int index, QByteArray buffer);
+void close(int index);
 
 }
 }

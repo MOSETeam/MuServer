@@ -48,6 +48,15 @@ void send(int index, QByteArray buffer) {
     }
 }
 
+void close(int index) {
+    if(MOSE::TCPServer::getClient(index) != NULL) {
+        MOSE::TCPServer::getClient(index)->close();
+    }
+    else {
+        qWarning() << "[MainServer]" << "Can not close non exist client";
+    }
+}
+
 }
 }
 }

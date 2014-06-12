@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication app(argc, argv);
 
-    MOSE::Logger::main("ConnectServer");
+    MOSE::Logger::main("ConnectServer1");
 
     MOSE::Configuration::loadGlobal("connectserver");
 
